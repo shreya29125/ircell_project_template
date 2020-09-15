@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -24,6 +24,12 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <style type="text/css">@import url("css/tabbed.css");</style>
+    <link rel="stylesheet" type="text/css" href="css/colors.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/switch.js"></script>
     <style>
         p
         {
@@ -32,7 +38,7 @@
         }
     </style>
 </head>
-<body>
+<body style="overflow-x:hidden">
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -104,12 +110,12 @@
     <!--? slider Area Start-->
     <div class="slider-area slider-area2 slider-height2 position-relative" data-background="img/hero/hero4.png">
         <div class="slider-active">
-            <!-- Single Slider -->
+            
             <div class="single-slider">
                 <div class="slider-cap-wrapper">
                     <div class="hero-caption">
                         <h1 data-animation="fadeInLeft" data-delay=".4s">Projects</h1>
-                        <!-- breadcrumb Start-->
+                    
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -118,7 +124,7 @@
                         </nav>
                     </div>
 
-                    <!-- breadcrumb End -->
+                    
                     <div class="hero-img">
                         <img src="img/hero/wfh.jpg" alt=""  data-animation="fadeInRight" data-transition-duration="5s">
                     </div>
@@ -127,137 +133,109 @@
         </div>
     </div>
     <!--? Services Area Start -->
-    <section class="services-section section-padding30 fix">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-10 col-lg-10 col-md-12">
-                    <!--Section Title -->
-                    <div class="section-tittle text-center mb-70">
-                        <!--<span>Projects</span>-->
-                        <h2>PROJECTS</h2>
-                    </div> 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>MACHINE LEARNING<br>Laval University<br>12 December 2020</p>
-                            <!--<div class="services-caption">
-                                <h3><a href="#">Business consulting</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+    <section id="tabbed" class="services-section section-padding30 fix" style="padding-top:100px;padding-bottom:50px">
+    <div class="tab-1">
+                    <div class="row">
+                        <div class="cell w-100">
+                            <!-- Large title -->
+                            <div class="title large">Projects</div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>BIG DATA ANALYTICS<br>Stanford University<br>12 December 2020</p>
-                            <!--<div class="services-caption">
-                                <h3><a href="#">Media planing</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                    <div class="row">
+                        <div class="cell w-100">
+                            <button class="collapsible">Machine Learning&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Massachusetts Institute of Technology&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                            <div class="content">
+                              <p style="padding: 20px;">
+                                <span class="title small">Project Details</span><br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <div class="cell w-32 apply-cell">
+                                    <input type="submit" value="Apply" class="button apply" style="margin-bottom: 5px;">
+                                </div>
+                              </p>
+                            </div>
+                            <br>
+                            <button class="collapsible">Parasitology&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;National University of Singapore&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                            <div class="content">
+                              <p style="padding: 20px;">
+                                <span class="title small">Project Details</span><br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <div class="cell w-32 apply-cell">
+                                    <input type="submit" value="Apply" class="button apply">
+                                </div>
+                              </p>
+                            </div>
+                            <br>
+                            <button class="collapsible">Architecture Design of Digital Integrated Circuit&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;University of Tokyo&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                            <div class="content">
+                              <p style="padding: 20px;">
+                                <span class="title small">Project Details</span><br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <div class="cell w-32 apply-cell">
+                                    <input type="submit" value="Apply" class="button apply">
+                                </div>
+                              </p>
+                            </div>
+                            <br>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>DEEP LEARNING<br>University of California<br>12 December 2020</p>
-                            <!--<div class="services-caption">
-                                <h3><a href="#">Professional HR</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                    <div class="row">
+                        <div class="cell w-100">
+                            <!-- Large title -->
+                            <div class="title large">Past Projects</div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>ARTIFICIAL INTELLIGENCE<br>Harvard University<br>12 December 2020</p>
-                            <!--<div class="services-caption">
-                                <h3><a href="#">Business consulting</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                    <div class="row">
+                        <div class="cell w-100">
+                            <button class="collapsible">Machine Learning&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Massachusetts Institute of Technology&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                            <div class="content">
+                              <p style="padding: 20px;">
+                                <span class="title small">Project Details</span><br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <div class="cell w-32 apply-cell">
+                                    <input type="submit" value="Apply" class="button apply" style="margin-bottom: 5px;">
+                                </div>
+                              </p>
+                            </div>
+                            <br>
+                            <button class="collapsible">Parasitology&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;National University of Singapore&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                            <div class="content">
+                              <p style="padding: 20px;">
+                                <span class="title small">Project Details</span><br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <div class="cell w-32 apply-cell">
+                                    <input type="submit" value="Apply" class="button apply">
+                                </div>
+                              </p>
+                            </div>
+                            <br>
+                            <button class="collapsible">Architecture Design of Digital Integrated Circuit&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;University of Tokyo&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                            <div class="content">
+                              <p style="padding: 20px;">
+                                <span class="title small">Project Details</span><br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <div class="cell w-32 apply-cell">
+                                    <input type="submit" value="Apply" class="button apply">
+                                </div>
+                              </p>
+                            </div>
+                            <br>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>NEUROMORPHIC COMPUTING<br>University of Oxford<br>12 December 2020</p>
-                            <!--<div class="services-caption">
-                                <h3><a href="#">Media planing</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>EMBEDDED SYSTEMS<br>National University of Singapore<br>12 December 2020</p>
-                            <!--<div class="services-caption">
-                                <h3><a href="#">Professional HR</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>ARTIFICIAL INTELLIGENCE<br>Harvard University<br>12 December 2020</p>
-                            <!--<div class="services-caption">
-                                <h3><a href="#">Business consulting</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>NEUROMORPHIC COMPUTING<br>University of Oxford<br>12 December 2020</p>
-                            <!--<div class="services-caption">
-                                <h3><a href="#">Media planing</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>EMBEDDED SYSTEMS<br>National University of Singapore<br>12 December 2020</p>
-                            <!--<div class="services-caption">
-                                <h3><a href="#">Professional HR</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    </div>
     </section>
-    <section class="services-section section-padding30 fix" style="padding-top:100px;padding-bottom:50px">
+    <!--<section class="services-section section-padding30 fix" style="padding-top:100px;padding-bottom:50px">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10 col-lg-10 col-md-12">
-                    <!--Section Title -->
+                    Section Title 
                     <div class="section-tittle text-center mb-70">
-                        <!--<span>Projects</span>-->
+                        <span>Projects</span>
                         <h2>PAST PROJECTS</h2>
                     </div> 
                 </div>
@@ -267,11 +245,11 @@
                     <div class="single-services single-services2 mb-30 section-over1 text-center">
                         <div class="services-img">
                             <p>MACHINE LEARNING<br>Laval University<br>12 December 2020</p>
-                            <!--<div class="services-caption">
+                            <div class="services-caption">
                                 <h3><a href="#">Business consulting</a></h3>
                                 <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
                                 <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -279,11 +257,11 @@
                     <div class="single-services single-services2 mb-30 section-over1 text-center">
                         <div class="services-img">
                             <p>BIG DATA ANALYTICS<br>Stanford University<br>12 December 2020</p>
-                            <!--<div class="services-caption">
+                            <div class="services-caption">
                                 <h3><a href="#">Media planing</a></h3>
                                 <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
                                 <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,11 +269,11 @@
                     <div class="single-services single-services2 mb-30 section-over1 text-center">
                         <div class="services-img">
                             <p>DEEP LEARNING<br>University of California<br>12 December 2020</p>
-                            <!--<div class="services-caption">
+                            <div class="services-caption">
                                 <h3><a href="#">Professional HR</a></h3>
                                 <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
                                 <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -303,11 +281,11 @@
                     <div class="single-services single-services2 mb-30 section-over1 text-center">
                         <div class="services-img">
                             <p>ARTIFICIAL INTELLIGENCE<br>Harvard University<br>12 December 2020</p>
-                            <!--<div class="services-caption">
+                            <div class="services-caption">
                                 <h3><a href="#">Business consulting</a></h3>
                                 <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
                                 <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -315,11 +293,11 @@
                     <div class="single-services single-services2 mb-30 section-over1 text-center">
                         <div class="services-img">
                             <p>NEUROMORPHIC COMPUTING<br>University of Oxford<br>12 December 2020</p>
-                            <!--<div class="services-caption">
+                            <div class="services-caption">
                                 <h3><a href="#">Media planing</a></h3>
                                 <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
                                 <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -327,11 +305,11 @@
                     <div class="single-services single-services2 mb-30 section-over1 text-center">
                         <div class="services-img">
                             <p>EMBEDDED SYSTEMS<br>National University of Singapore<br>12 December 2020</p>
-                            <!--<div class="services-caption">
+                            <div class="services-caption">
                                 <h3><a href="#">Professional HR</a></h3>
                                 <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
                                 <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -339,11 +317,11 @@
                     <div class="single-services single-services2 mb-30 section-over1 text-center">
                         <div class="services-img">
                             <p>ARTIFICIAL INTELLIGENCE<br>Harvard University<br>12 December 2020</p>
-                            <!--<div class="services-caption">
+                            <div class="services-caption">
                                 <h3><a href="#">Business consulting</a></h3>
                                 <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
                                 <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -351,11 +329,11 @@
                     <div class="single-services single-services2 mb-30 section-over1 text-center">
                         <div class="services-img">
                             <p>NEUROMORPHIC COMPUTING<br>University of Oxford<br>12 December 2020</p>
-                            <!--<div class="services-caption">
+                            <div class="services-caption">
                                 <h3><a href="#">Media planing</a></h3>
                                 <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
                                 <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -363,11 +341,11 @@
                     <div class="single-services single-services2 mb-30 section-over1 text-center">
                         <div class="services-img">
                             <p>EMBEDDED SYSTEMS<br>National University of Singapore<br>12 December 2020</p>
-                            <!--<div class="services-caption">
+                            <div class="services-caption">
                                 <h3><a href="#">Professional HR</a></h3>
                                 <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
                                 <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -375,7 +353,7 @@
             </div>
         </div>
     </section>
-    <!--Services Area End -->
+    Services Area End -->
     <!--? Want To work -->
     <!--<section class="wantToWork-area section-bg2"  data-background="img/gallery/section_bg01.png">
         <div class="container">
@@ -492,7 +470,22 @@
 </div>-->
 
 <!-- JS here -->
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
 <script src="./js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->
 <script src="./js/vendor/jquery-1.12.4.min.js"></script>
