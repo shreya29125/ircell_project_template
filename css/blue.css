@@ -1,0 +1,15 @@
+#tabbed .button.blue {
+	background: #6e98e3;
+}
+#tabbed .button.blue:hover {
+	background: #333;
+}
+#tabbed .title.large {
+	color: #4877cb;
+}
+#tabbed p.quote {
+	color: #6E99E3;
+}
+#tabbed a {
+	color: #6e98e3;
+}
