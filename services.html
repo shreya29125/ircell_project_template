@@ -1,6 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146917460-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-146917460-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Projects | FTP | International Relations Cell</title>
@@ -44,6 +52,21 @@
         	margin-top:5px;
         	width:100%;
         }
+        .dropdown-toggle::after
+        {
+        	content:none;
+        }
+        .dropup
+        {
+        	display:none;
+        }
+        @media only screen and (max-width: 992px)
+        {
+        	.dropup
+        	{
+        		display:block;
+        	}
+        }
     </style>
 </head>
 <body style="overflow-x:hidden">
@@ -69,7 +92,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                              <a href="index.html"><img src="img/logo/ircell_logo2.png" alt=""></a>
+                              <a href="index.html"><img src="img/logo/ircell_logo3.png" alt="" style="float:left"><div style="color:#247d45;font-size:50px;margin-top:10px;display:inline;font-weight:600">FTP</div></a>
                           </div>
                       </div>
                       <div class="col-xl-10 col-lg-10 col-md-8">
@@ -458,21 +481,6 @@
             </div>
         </div>
         <!--footer-bottom area-->
-        <div class="footer-bottom-area">
-            <div class="container-fluid">
-                <div class="footer-border">
-                    <div class="row align-items-center">
-                        <div class="col-xl-12 ">
-                            <div class="footer-copy-right">
-                                <p> Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
-                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                  Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
         <!--Footer End-->
       </div>
   </footer>
@@ -480,6 +488,17 @@
   <!--<div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>-->
+<!-- Default dropup button -->
+<div class="btn-group dropup" style="position:fixed;bottom:18px;right:31px;height: 50px;width: 50px;">
+  <button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius:50%;width:100%;background:#fd8f5f;color:#fff;font-size:20px;text-align:center;line-height: 48px;border: 2px solid transparent;box-shadow: 0 0 10px 3px rgba(108,98,98,0.2);padding:0">
+    <i class="fas fa-user-circle"></i>
+  </button>
+  <div class="dropdown-menu" style="margin-right:10px">
+     <!--Dropdown menu links-->
+    <a class="dropdown-item" href="#">Profile</a>
+    <a class="dropdown-item" href="#">Log Out</a>
+  </div>
+</div>
 
 <!-- JS here -->
 <script>
