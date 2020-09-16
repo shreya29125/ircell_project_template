@@ -36,6 +36,14 @@
             color:#2b983d;
             font-weight:600;
         }
+        .dropdown-menu
+        {
+        	padding:10px;
+        	font-size:15px;
+        	border-radius:8px;
+        	margin-top:5px;
+        	width:100%;
+        }
     </style>
 </head>
 <body style="overflow-x:hidden">
@@ -90,8 +98,12 @@
                                 </nav>
                             </div>
                             <!-- left Btn -->
-                            <div class="header-right-btn f-right d-none d-lg-block  ml-30">
-                                <a href="#" class="header-btn">ABC123</a>
+                            <div class="header-right-btn f-right d-none d-lg-block  ml-30 dropdown">
+                                <buttton href="#" class="header-btn btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABC123</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                	<a class="dropdown-item" href="#">Profile</a>
+                                	<a class="dropdown-item" href="#">Log Out</a>
+                                </div>
                             </div>
                         </div>
                     </div>             
