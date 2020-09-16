@@ -2,21 +2,10 @@ body
 {
 	overflow-x: hidden;
 }
-#tabbed * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: 600;
-	font-style: normal;
-	font-size: 100%;
+#tabbed *{
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	vertical-align: baseline;
-	line-height: normal;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box
-}#tabbed a {
+}
+#tabbed a {
 	text-decoration: none
 }
 
@@ -29,6 +18,7 @@ body
 }
 
 #tabbed .row {
+	margin: 0;
 	display: block;
 	float: left;
 	width: 96%;
@@ -211,12 +201,12 @@ body
 #tabbed .mt-30 {
 	margin-top: 30px
 }
-#tabbed a,
 #tabbed input,
 #tabbed input:checked~.wrapper>div,
 #tabbed label.tabs,
 #tabbed select,
 #tabbed textarea {
+	border: 0;
 	-webkit-transition: all ease .2s;
 	-moz-transition: all ease .3s;
 	-ms-transition: all ease .3s;
@@ -283,6 +273,7 @@ body
   border-radius: 1rem;
   cursor: pointer;
   padding: 18px;
+  max-width: 1600px;
   width: 100%;
   border: none;
   text-align: left;
@@ -340,5 +331,43 @@ body
 	#tabbed .row
 	{
 		width:94%;
+	}
+}
+
+.modal-title {
+	margin: 0 auto;
+	text-align: center;
+}
+.modal-dialog {
+	max-width: 1600px;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.btn-primary {
+	padding: 15px 40px;
+	border-radius: 1rem;	
+}
+.modal-title {
+	display: grid;
+}
+.modal-header .close {
+	margin-left: -1px;
+}
+.modal-body, .modal-footer {
+	margin: 15px 0;
+	padding: 10px 30px;
+}
+input[type=file] {
+	margin: 0;
+  	position: absolute;
+  	left: 40%;
+}
+@media screen and (max-width:500px) {
+	.btn-primary {
+		padding: 10px 20px;
+	}
+	input[type=file] {
+	  	left: unset;
 	}
 }
