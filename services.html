@@ -184,7 +184,12 @@
         </div>
         <div class="row">
             <div class="cell w-100">
-                <button class="collapsible">Machine Learning&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Massachusetts Institute of Technology&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                <div class="collapsible">
+                    <button class="drop-tile">
+                        <span class="lft">Machine Learning</span><span>Massachusetts Institute of Technology</span><span class="rgt">Nov 15, 2020</span>
+                    </button>
+                    <button class="bookmark"></button>
+                </div>
                 <div class="content">
                     <p style="padding: 20px; margin-bottom: 0;">
                         <span class="title small">Project Details</span><br>
@@ -241,7 +246,12 @@
                 </div>
             </div>
             <div class="cell w-100">
-                <button class="collapsible">Parasitology&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;National University of Singapore&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                <div class="collapsible">
+                    <button class="drop-tile">
+                        <span class="lft">Parasitology</span><span>National University of Singapore</span><span class="rgt">Dec 1, 2020</span>
+                    </button>
+                    <button class="bookmark"></button>
+                </div>
                 <div class="content">
                     <p style="padding: 20px; margin-bottom: 0;">
                         <span class="title small">Project Details</span><br>
@@ -273,7 +283,7 @@
                                       <div class="modal-body">
                                       
                                         <div class="modal-split">
-                                        <span style="color: red;">Deadline: </span>Feb. 1, 2021<br><br>
+                                        <span style="color: red;">Deadline: </span>Jan. 13, 2021<br><br>
                                         <div style="font-size: 20px; margin-bottom: 10px;">Project Details:</div>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                         </div>
@@ -298,7 +308,12 @@
                 </div>
             </div>
             <div class="cell w-100">
-                <button class="collapsible">Architecture Design of Digital Integrated Circuit&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;University of Tokyo&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                <div class="collapsible">
+                    <button class="drop-tile">
+                        <span class="lft">Architecture Design of Digital Integrated Circuit</span><span>University of Tokyo</span><span class="rgt">Jan 1, 2020</span>
+                    </button>
+                    <button class="bookmark"></button>
+                </div>
                 <div class="content">
                     <p style="padding: 20px; margin-bottom: 0;">
                         <span class="title small">Project Details</span><br>
@@ -363,7 +378,12 @@
         </div>
         <div class="row">
             <div class="cell w-100">
-                <button class="collapsible">Machine Learning&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Massachusetts Institute of Technology&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                <div class="collapsible">
+                    <button class="drop-tile">
+                        <span class="lft">Machine Learning</span><span>Massachusetts Institute of Technology</span><span class="rgt">Nov 15, 2020</span>
+                    </button>
+                    <button class="bookmark"></button>
+                </div>
                 <div class="content">
                     <p style="padding: 20px; margin-bottom: 0;">
                         <span class="title small">Project Details</span><br>
@@ -420,7 +440,12 @@
                 </div>
             </div>
             <div class="cell w-100">
-                <button class="collapsible">Parasitology&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;National University of Singapore&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                <div class="collapsible">
+                    <button class="drop-tile">
+                        <span class="lft">Parasitology</span><span>National University of Singapore</span><span class="rgt">Dec 1, 2020</span>
+                    </button>
+                    <button class="bookmark"></button>
+                </div>
                 <div class="content">
                     <p style="padding: 20px; margin-bottom: 0;">
                         <span class="title small">Project Details</span><br>
@@ -477,7 +502,12 @@
                 </div>
             </div>
             <div class="cell w-100">
-                <button class="collapsible">Architecture Design of Digital Integrated Circuit&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;University of Tokyo&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nov 15, 2020</button>
+                <div class="collapsible">
+                    <button class="drop-tile">
+                        <span class="lft">Architecture Design of Digital Integrated Circuit</span><span>University of Tokyo</span><span class="rgt">Jan 1, 2020</span>
+                    </button>
+                    <button class="bookmark"></button>
+                </div>
                 <div class="content">
                     <p style="padding: 20px; margin-bottom: 0;">
                         <span class="title small">Project Details</span><br>
@@ -509,9 +539,9 @@
                                     <div class="modal-body">
                                       
                                         <div class="modal-split">
-                                        <span style="color: red;">Deadline: </span>Feb. 1, 2021<br><br>
-                                        <div style="font-size: 20px; margin-bottom: 10px;">Project Details:</div>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <span style="color: red;">Deadline: </span>Feb. 1, 2021<br><br>
+                                            <div style="font-size: 20px; margin-bottom: 10px;">Project Details:</div>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                         </div>
                                         
                                         <div class="modal-split">
@@ -773,19 +803,29 @@
 
 <!-- JS here -->
 <script>
-    var coll = document.getElementsByClassName("collapsible");
+    var coll = document.getElementsByClassName("drop-tile");
     var i;
 
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
+        this.parentElement.classList.toggle("active");
+        var content = this.parentElement.nextElementSibling;
         if (content.style.maxHeight){
           content.style.maxHeight = null;
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
         } 
       });
+    }
+</script>
+<script>
+    var coll = document.getElementsByClassName("bookmark");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        });
     }
 </script>
 <script src="./js/vendor/modernizr-3.5.0.min.js"></script>
