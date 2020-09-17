@@ -272,42 +272,102 @@ body
   border-color: #777;
   border-radius: 1rem;
   cursor: pointer;
-  padding: 18px;
-  max-width: 1600px;
-  width: 100%;
+  width: 100% !important;
   border: none;
-  text-align: left;
   outline: none;
   font-size: 15px;
-  padding: 20px 15px 20px 15px !important; 
   transition: all 0.5s ease-out;
 }
-
-.active, .collapsible:hover {
+.collapsible:hover{
   background-color: #444;
   color: white;
 }
 
-.collapsible:after {
-  content: '\002B';
-  color: black;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
 .collapsible.active {
 	transition: all 0.2s ease-out;	
 	border-radius: 1rem 1rem 0 0;
+	background-color: #444;
+}
+.drop-tile {
+	color: black;
+	height: 100%;
+	width: 95%;
+	position: relative;
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	border-right: 1px;
+	border-radius: 1rem;
+	padding: 20px; 
+	text-align: left;
+	transition: all 0.5s ease-out;
 }
 
-.active:after {
-  content: "\2212";
-  color: white;
+.collapsible:hover .drop-tile, 
+.collapsible.active .drop-tile, 
+.collapsible:hover .bookmark, 
+.collapsible.active .bookmark{
+	color: white;
+}
+
+.collapsible span {
+	min-width: 150px;
+}
+span.lft {
+	float: left; 
+	width: 40%;
+}
+span.rgt {
+	float: right; 
+	text-align: right;
+}
+.bookmark {
+	float: right;
+	width: 5%;
+	color: black;
+	position: relative;
+	display: inline-block;
+	height: 65px;
+	border: none;
+	background-color: transparent;
+	transition: all 0.5s ease-out;
+}
+.bookmark::before {
+	content: "\f02e";
+	font-family: "Font Awesome 5 Free" !important;
+	font-weight: 400;
+}
+.bookmark.active:before {
+	content: "\f02e";
+	font-family: "Font Awesome 5 Free" !important;
+	font-weight: 800;
+	color: orange;
+	background-color: transparent !important;
+}
+
+@media screen and (max-width:850px) {
+	.drop-tile {
+		width: 90%;
+	}
+	.bookmark {
+		width: 10%;
+		padding-right: 10px;
+	}
+	.collapsible span {
+		min-width: 50px;
+		max-width: 200px;
+	}
+}
+@media screen and (max-width:720px) {
+	span.rgt {
+		margin-top: 20px;
+	}
 }
 
 .content {
   padding: 0 18px;
   max-height: 0;
+  width: 100%;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
@@ -357,6 +417,9 @@ body
 .modal-body, .modal-footer {
 	margin: 15px 0;
 	padding: 10px 30px;
+}
+.modal-body {
+	transition: all 0.5s ease-out;
 }
 input[type=file] {
 	margin: 0;
