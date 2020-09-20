@@ -95,37 +95,10 @@
         		box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         	}
         }
-        .title.large 
+        .drop-tile
         {
-            color: #256f12;
+            width:100%;
         }
-        .title.large 
-        {
-            font-size: 28px;
-            text-transform: uppercase;
-            padding-bottom: 50px;
-            padding-top:15px;
-        }
-        .form-control
-        {
-            font-size:20px;
-        }
-        @media (min-width: 576px)
-        {
-            .col-sm-3 
-            {
-                max-width: 16.6%;
-            }
-        }
-        label
-        {
-            text-align:center;
-        }
-        .form-group
-        {
-            padding:15px;
-        }
-}
     </style>
 </head>
 <body style="overflow-x:hidden">
@@ -204,130 +177,50 @@
 <!-- Header End -->
 </header>
 <main style="background-color:#fff9d6">
-    <section class="services-section section-padding30 fix" style="margin:0 30px;padding-top:30px;padding-bottom:50px">
+    <!--? Projects Area Start -->
+    <section id="tabbed" class="services-section section-padding30 fix" style="margin-top:0;margin-bottom:0;padding-top:20px;padding-bottom:50px">
         <div class="row">
             <div class="cell w-100">
                 <!-- Large title -->
-                <div class="title large" style="text-align:center;font-weight:700">Apply for Scholarship</div>
+                <div class="title large" style="text-align:center;font-weight:700">Results</div>
             </div>
         </div>
-        <form>
-            <div class="form-group row border-bottom">
-                <label for="textareaEmail3" class="col-sm-2 col-form-label" for="faced">Name of Faculty Advisor</label>
-                <div class="col-sm-4">
-                    <textarea  class="form-control" name="NameofFcaultyAdvisor"  rows="1" style="height:45px" required></textarea>
+        <div class="row" style="padding-bottom:50px">
+            <div class="cell w-100">
+                <div class="collapsible">
+                    <button class="drop-tile" style="cursor:pointer;text-align:center">
+                        Machine Learning  |  Massachusetts Institute of Technology
+                    </button>
                 </div>
-                <label for="textareaEmail3" class="col-sm-2 col-form-label" for="NameofHOD" style="text-align:center">Name of HOD</label>
-                <div class="col-sm-4">
-                    <textarea  class="form-control" name="NameofHOD"  rows="1" style="height:45px" required></textarea>
-                </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label for="Nameofhostinstitution" class="col-sm-2 col-form-label">Name of Host Institution</label>
-                <div class="col-sm-10">
-                    <textarea  class="form-control" name="Nameofhostinstitution"  rows="1"></textarea>
+                <div class="content">
+                    <p style="padding: 20px; margin-bottom: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
                 </div>
             </div>
-            <div class="form-group row border-bottom">
-                <label for="DetailsOfTheProposedResearch_or_professionalInternship" class="col-sm-2 col-form-label">Details of the proposed<br>
-                                research/ professional internship (250 words)</label>
-                <div class="col-sm-10">
-                    <textarea  class="form-control" name="DetailsOfTheProposedResearch_or_professionalInternship"  rows="10"></textarea>
+            <div class="cell w-100">
+                <div class="collapsible">
+                    <button class="drop-tile" style="cursor:pointer;text-align:center">
+                        Machine Learning  |  Massachusetts Institute of Technology
+                    </button>
+                </div>
+                <div class="content">
+                    <p style="padding: 20px; margin-bottom: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
                 </div>
             </div>
-            <div class="form-group row border-bottom">
-                <label for="SOP" class="col-sm-2 col-form-label">Your Statement of Purpose (SOP - 250
-                                words)</label>
-                <div class="col-sm-10">
-                    <textarea  class="form-control" name="sop"  rows="10"></textarea>
+            <div class="cell w-100">
+                <div class="collapsible">
+                    <button class="drop-tile" style="cursor:pointer;text-align:center">
+                        Machine Learning  |  Massachusetts Institute of Technology
+                    </button>
                 </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label for="HistoryOfCollobration" class="col-sm-2 col-form-label">History of Collaboration (if any) with
-                                the host institution/ company</label>
-                <div class="col-sm-10">
-                    <textarea  class="form-control" name="HistoryOfCollobration"  rows="10"></textarea>
+                <div class="content">
+                    <p style="padding: 20px; margin-bottom: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
                 </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label for="DurationOfVisit_from_and_to" class="col-sm-2 col-form-label">Duration of visit (from & to)</label>
-                <div class="col-sm-2" style="margin-bottom:5px">
-                    <input type="date" class="form-control" name="DurationOfVisit_from"  rows="10" style="height:45px;">
-                </div>
-                <div class="col-sm-2 offset-0">
-                    <input type="date" class="form-control" name="DurationOfVisit_to"  rows="10" style="height:45px">
-                </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label for="Justification_of_applying_through_the_IITKGF_Of_USA_AwardProgram" class="col-sm-2 col-form-label">Justification of applying through
-                                (IITKGP) USA Award Program</label>
-                <div class="col-sm-10">
-                    <textarea  class="form-control" name="Justification_of_applying_through_the_IITKGF_Of_USA_AwardProgram"  rows="10"></textarea>
-                </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label for="PossibleOutcomeOfYourProposedResearch" class="col-sm-2 col-form-label">Possible outcome of your proposed
-                                research/ professional internship</label>
-                <div class="col-sm-10">
-                    <textarea  class="form-control" name="PossibleOutcomeOfYourProposedResearch"  rows="10"></textarea>
-                </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label for="Explain_in_about_250_words_how_your_engagement_with_the_Host_Institute" class="col-sm-2 col-form-label">How will your engagement with the Host
-                                Institute/company will be beneficial to IITKGP? (Explain in about 250 words)</label>
-                <div class="col-sm-10">
-                    <textarea  class="form-control" name="Explain_in_about_250_words_how_your_engagement_with_the_Host_Institute"  rows="10"></textarea>
-                </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label class="col-sm-3 col-form-label" for="cv">Latest CV</label>
-                <div class="col-sm-9" >
-                    <input type="file" class="form-control-file" name="cv">
-                </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label class="col-sm-3 col-form-label" for="Awards">Awards (Upload merged PDF)</label>
-                <div class="col-sm-9">
-                    <input type="file" class="form-control-file" name="Awards">
-                </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label class="col-sm-3 col-form-label" for="NOC">No Objection Certificate (NOC) from
-                                faculty advisor and HoD of the Dept/school/Center stating the tentative dates of the
-                                Internship period.</label>
-                <div class="col-sm-9">
-                    <input type="file" class="form-control-file" name="NOC">
-                </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label class="col-sm-3 col-form-label" for="offer_letter">Invitation Letter</label>
-                <div class="col-sm-9">
-                    <input type="file" class="form-control-file" name="offer_letter">
-                </div>
-            </div>
-            <div class="form-group row border-bottom">
-                <label class="col-sm-3 col-form-label" for="prev_funding">Previous Funding</label>
-                <div class="col-sm-2">
-                    <input type="radio" class="col-md-1 col-form-label funding" name="prev_funding"
-                                       style="display: inline-block !important; width: auto;" value="True"
-                                       onclick="$('.filee').css('visibility','visible');$('.proof').prop('required',true);">Yes
-                    <input type="radio" class="col-md-1 col-form-label" name="prev_funding"
-                                       style="display: inline-block !important; width: auto; margin-left: 10px;"
-                                       value="False" checked
-                                       onclick="$('.filee').css('visibility','hidden');$('.proof').prop('required',false);">No
-                </div>
-            </div>
-            <div class="form-group row filee border-bottom" style="visibility: hidden;">
-                <label class="col-sm-3 col-form-label" for="fuding_proof">Funding Proof</label>
-                <div class="col-sm-9">
-                    <input type="file" class="form-control-file proof" name="fuding_proof">
-                </div>
-            </div>
-        </form>
-        <div style="width:50%;margin:auto;">
-            <div style="width:50%;margin:auto;">
-                <button type="submit" class="btn btn-primary btn-lg myBtn" style="margin-right:8px;margin-bottom:2px">Apply</button>
-                <a href="scholarships.html"><button type="button" class="btn btn-primary btn-lg myBtn" data-dismiss="modal">Close</button></a>
             </div>
         </div>
     </section>
