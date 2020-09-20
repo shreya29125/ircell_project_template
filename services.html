@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior:smooth">
 <head>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146917460-1"></script>
     <script>
@@ -38,7 +38,7 @@
     <script type="text/javascript" src="js/modal.js">
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
     <style type="text/css">@import url("css/tabbed.css");</style>
     <link rel="stylesheet" type="text/css" href="css/colors.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/all.css">
@@ -66,11 +66,33 @@
         {
         	display:none;
         }
-        @media only screen and (max-width: 992px)
+        .logo img
+        {
+        	width:84.4px;
+        	height:84.4px;
+        }
+        .logo div
+        {
+        	font-size:50px;
+        }
+        @media only screen and (max-width: 991.5px)
         {
         	.dropup
         	{
         		display:block;
+        	}
+        	.logo img
+        	{
+        		width:65px;
+        		height:65px;
+        	}
+        	.logo div
+        	{
+        		font-size:35px;
+        	}
+        	.main-header
+        	{
+        		box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         	}
         }
     </style>
@@ -88,18 +110,19 @@
         </div>
     </div>
     <!-- Preloader Start-->
-    <header>
+    <header style="margin-bottom:0;background-image:url('img/logo/bg8.png');background-repeat: no-repeat;background-attachment: fixed;
+  background-position: center;">
         <!-- Header Start -->
         <div class="header-area header_area">
-            <div class="main-header">
+            <div class="main-header" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
              <div class="header-bottom  header-sticky">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <!-- Logo -->
-                        <div class="col-xl-2 col-lg-2 col-md-1">
+                        <div class="col-xl-2 col-lg-2 col-md-1" >
                             <div class="logo">
-                              <a href="index.html"><img src="img/logo/ircell_logo3.png" alt="" style="float:left"><div style="color:#247d45;font-size:50px;margin-top:10px;display:inline;font-weight:600">FTP</div></a>
-                          </div>
+                              <a href="index.html" style="display:flex"><img src="img/logo/output-onlinepngtools (2).png" alt="ircell_logo"><div style="color:#247d45;margin-top:10px;font-weight:600">FTP</div></a>
+                        	</div>
                       </div>
                       <div class="col-xl-10 col-lg-10 col-md-8">
                          <div class="header-left  d-flex f-right align-items-center">
@@ -107,14 +130,14 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav> 
                                     <ul id="navigation">                                                                                                                                     
-                                        <li><a href="#">Projects</a></li>
-                                        <li><a href="#">Scholarships</a>
+                                        <li><a href="services.html">Projects</a></li>
+                                        <li><a href="scholarships.html">Scholarships</a>
                                             <!--<ul class="submenu">
                                                 <li><a href="about.html">about</a></li>
                                                 <li><a href="elements.html">Element</a></li>
                                             </ul>-->
                                         </li>
-                                        <li><a href="#">Your Applications</a></li>
+                                        <li><a href="#">Applied Projects</a></li>
                                         <li><a href="#">Applied Scholarships</a>
                                             <!--<ul class="submenu">
                                                 <li><a href="blog.html">Blog</a></li>
@@ -123,6 +146,7 @@
                                         </li>
                                         <li><a href="#">Bookmarked</a></li>
                                         <li><a href="#">Results</a></li>
+                                        <li id="contact"><a href="#footer">Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -134,6 +158,7 @@
                                 	<a class="dropdown-item" href="#">Log Out</a>
                                 </div>
                             </div>
+                            <!--<div style="padding-left:10px;padding-top:10px"><a href="#footer" style="color:black"><i class="fa fa-phone fa-2x" style="color:rgba(255,164,31,0.8)"></i></a></div>-->
                         </div>
                     </div>             
                     <!-- Mobile Menu -->
@@ -147,42 +172,16 @@
 </div>
 <!-- Header End -->
 </header>
-<main>
-    <!--? slider Area Start-->
-    <div class="slider-area slider-area2 slider-height2 position-relative" data-background="img/hero/hero4.png">
-        <div class="slider-active">
-            
-            <div class="single-slider">
-                <div class="slider-cap-wrapper">
-                    <div class="hero-caption">
-                        <h1 data-animation="fadeInLeft" data-delay=".4s">Projects</h1>
-                    
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Projects</a></li> 
-                            </ol>
-                        </nav>
-                    </div>
-
-                    
-                    <div class="hero-img">
-                        <img src="img/hero/wfh.jpg" alt=""  data-animation="fadeInRight" data-transition-duration="5s">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--? Services Area Start -->
-    <!--? Services Area Start -->
-    <section id="tabbed" class="services-section section-padding30 fix" style="padding-top:100px;padding-bottom:50px">
+<main style="background-color:#fff9d6">
+    <!--? Projects Area Start -->
+    <section id="tabbed" class="services-section section-padding30 fix" style="margin-top:0;margin-bottom:0;padding-top:20px;padding-bottom:50px">
         <div class="row">
             <div class="cell w-100">
                 <!-- Large title -->
-                <div class="title large">Projects</div>
+                <div class="title large" style="text-align:center;font-weight:700">Projects</div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-bottom:50px">
             <div class="cell w-100">
                 <div class="collapsible">
                     <button class="drop-tile" style="cursor:pointer">
@@ -373,7 +372,7 @@
         <div class="row">
             <div class="cell w-100">
                 <!-- Large title -->
-                <div class="title large">Past Projects</div>
+                <div class="title large" style="text-align:center">Past Projects</div>
             </div>
         </div>
         <div class="row">
@@ -565,153 +564,8 @@
             </div>
         </div>
     </section>
-    <!--<section class="services-section section-padding30 fix" style="padding-top:100px;padding-bottom:50px">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-10 col-lg-10 col-md-12">
-                    Section Title 
-                    <div class="section-tittle text-center mb-70">
-                        <span>Projects</span>
-                        <h2>PAST PROJECTS</h2>
-                    </div> 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>MACHINE LEARNING<br>Laval University<br>12 December 2020</p>
-                            <div class="services-caption">
-                                <h3><a href="#">Business consulting</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>BIG DATA ANALYTICS<br>Stanford University<br>12 December 2020</p>
-                            <div class="services-caption">
-                                <h3><a href="#">Media planing</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>DEEP LEARNING<br>University of California<br>12 December 2020</p>
-                            <div class="services-caption">
-                                <h3><a href="#">Professional HR</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>ARTIFICIAL INTELLIGENCE<br>Harvard University<br>12 December 2020</p>
-                            <div class="services-caption">
-                                <h3><a href="#">Business consulting</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>NEUROMORPHIC COMPUTING<br>University of Oxford<br>12 December 2020</p>
-                            <div class="services-caption">
-                                <h3><a href="#">Media planing</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>EMBEDDED SYSTEMS<br>National University of Singapore<br>12 December 2020</p>
-                            <div class="services-caption">
-                                <h3><a href="#">Professional HR</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>ARTIFICIAL INTELLIGENCE<br>Harvard University<br>12 December 2020</p>
-                            <div class="services-caption">
-                                <h3><a href="#">Business consulting</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>NEUROMORPHIC COMPUTING<br>University of Oxford<br>12 December 2020</p>
-                            <div class="services-caption">
-                                <h3><a href="#">Media planing</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services single-services2 mb-30 section-over1 text-center">
-                        <div class="services-img">
-                            <p>EMBEDDED SYSTEMS<br>National University of Singapore<br>12 December 2020</p>
-                            <div class="services-caption">
-                                <h3><a href="#">Professional HR</a></h3>
-                                <p>The automated process starts as soon <br>as your clothes go into the machine.</p>
-                                <a href="#" class="btn btn3">Make Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    Services Area End -->
-    <!--? Want To work -->
-    <!--<section class="wantToWork-area section-bg2"  data-background="img/gallery/section_bg01.png">
-        <div class="container">
-            <div class="wants-wrapper w-padding2">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-xl-7 col-lg-7 col-md-12">
-                        <div class="wantToWork-caption wantToWork-caption2">
-                            <h2>Need a consulting services?</h2>
-                            <p>The automated process starts as soon as your clothes go into the machine. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <a href="#" class="btn w-btn wantToWork-btn mr-20">Make an Appointment</a>
-                        <a href="#" class="btn2 w-btn wantToWork-btn"><i class="fas fa-phone"></i> (89) 673 378-309</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- Want To work End -->
 </main>
-<footer>
+<footer id="footer">
     <div class="footer-wrapper section-bg2 pl-100"  data-background="img/gallery/footer_bg.png">
          <!--Footer Start-->
         <div class="footer-area footer-padding">
@@ -726,14 +580,14 @@
                                 </div>-->
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                        <p>The International Relations Cell is a student body working under the Office of International Relations towards increasing IIT Kharagpur's global outreach.</p>
                                     </div>
                                 </div>
                                 <!--social-->
                                 <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -771,9 +625,10 @@
                             <div class="footer-tittle">
                                 <h4>Contact us</h4>
                                 <ul>
-                                    <li><a href="#">consulto98@gmail.com</a></li>
-                                    <li><a href="#">76/A, Green road, NYC</a></li>
-                                    <li class="number"><a href="#">(80) 783 367-3904</a></li>
+                                    <li><a href="#">Vishvesh Pandya</a></li>
+                                    <li><a href="#">Digvijay Anand</a></li>
+                                    <li><a style="text-decoration: none">or mail us at</a></li>
+                                    <li class="number"><a href="mailto:ftp.ircell@gmail.com">ftp.ircell@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
