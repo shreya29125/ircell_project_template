@@ -95,9 +95,21 @@
         		box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         	}
         }
+        @media (min-width: 576px)
+        {
+            .modal-dialog
+            {
+                width:60%;
+            }
+        }
         .drop-tile
         {
             width:100%;
+        }
+        .modal-dialog
+        {
+            padding-top:60px;
+            padding-bottom:60px;
         }
     </style>
 </head>
@@ -177,32 +189,74 @@
 <!-- Header End -->
 </header>
 <main style="background-color:#fff9d6">
+    <!--? Projects Area Start -->
     <section id="tabbed" class="services-section section-padding30 fix" style="margin-top:0;margin-bottom:0;padding-top:20px;padding-bottom:50px">
         <div class="row" style="padding-bottom:25px">
             <div class="cell w-100">
                 <!-- Large title -->
-                <div class="title large" style="text-align:center;font-weight:700">Scholarships</div>
+                <div class="title large" style="text-align:center;font-weight:700">Applied Scholarships</div>
             </div>
         </div>
         <div class="row">
             <div class="cell w-100">
                 <div class="collapsible">
                     <button class="drop-tile" style="cursor:pointer">
-                        <span class="lft">Machine Learning</span><span>Massachusetts Institute of Technology</span><span class="rgt">Nov 15, 2020</span>
+                        <span class="lft">DAAD</span><span>Dr. Aditya Mishra</span><span class="rgt">Berlin Institute of Technology</span>
                     </button>
                 </div>
                 <div class="content">
                     <p style="padding: 20px; margin-bottom: 0;">
-                        <span class="title small">Project Details</span><br>
+                        <span class="title small">Scholarship Details</span><br>
                         <br>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         
 
                         <!-- Button trigger modal -->
                         <div class="button">
-                            <a href="apply.html" style="color:white"><button type="button" class="btn btn-primary btn-lg myBtn">
-                              Apply</button></a>
+                            <button type="button" class="btn btn-primary btn-lg myBtn" data-toggle="modal" data-target="#myModal1">
+                              See Application
                             </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                
+                                <div class="modal-content">
+                                      
+                                    <div class="modal-body" style="text-align:center">
+
+                                                
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" style="font-size: 20px;">&times;</span></button><h2 style="font-weight:bold">SOP</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 15px;">abc</h2>
+                                                <hr>
+                                                <h2 style="font-weight:bold">History of Colabration</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 25px;">abc</h2>
+                                                <hr>
+                                                <h2 style="font-weight: bold; margin-top: 20px;">Justification of applying through the IITKGP Of USA AwardProgram</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 25px;">abc</h2>
+                                                <hr>
+                                                <h2 style="font-weight: bold; margin-top: 20px;">Engagement with the Host Institute</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 25px;">abc</h2>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view CV</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view Awards</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view Transcripts</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view NOC</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view Offer Letter</a>
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                    <!--Nothing Goes Here but is needed! -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </p>
                 </div>
@@ -212,21 +266,62 @@
             <div class="cell w-100">
                 <div class="collapsible">
                     <button class="drop-tile" style="cursor:pointer">
-                        <span class="lft">Machine Learning</span><span>Massachusetts Institute of Technology</span><span class="rgt">Nov 15, 2020</span>
+                        <span class="lft">DAAD</span><span>Dr. Aditya Mishra</span><span class="rgt">Berlin Institute of Technology</span>
                     </button>
                 </div>
                 <div class="content">
                     <p style="padding: 20px; margin-bottom: 0;">
-                        <span class="title small">Project Details</span><br>
+                        <span class="title small">Scholarship Details</span><br>
                         <br>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         
 
                         <!-- Button trigger modal -->
                         <div class="button">
-                            <a href="apply.html" style="color:white"><button type="button" class="btn btn-primary btn-lg myBtn">
-                              Apply</button></a>
+                            <button type="button" class="btn btn-primary btn-lg myBtn" data-toggle="modal" data-target="#myModal1">
+                              See Application
                             </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                
+                                <div class="modal-content">
+                                      
+                                    <div class="modal-body" style="text-align:center">
+
+                                                
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" style="font-size: 20px;">&times;</span></button><h2 style="font-weight:bold">SOP</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 15px;">abc</h2>
+                                                <hr>
+                                                <h2 style="font-weight:bold">History of Colabration</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 25px;">abc</h2>
+                                                <hr>
+                                                <h2 style="font-weight: bold; margin-top: 20px;">Justification of applying through the IITKGP Of USA AwardProgram</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 25px;">abc</h2>
+                                                <hr>
+                                                <h2 style="font-weight: bold; margin-top: 20px;">Engagement with the Host Institute</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 25px;">abc</h2>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view CV</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view Awards</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view Transcripts</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view NOC</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view Offer Letter</a>
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                    <!--Nothing Goes Here but is needed! -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </p>
                 </div>
@@ -236,21 +331,62 @@
             <div class="cell w-100">
                 <div class="collapsible">
                     <button class="drop-tile" style="cursor:pointer">
-                        <span class="lft">Machine Learning</span><span>Massachusetts Institute of Technology</span><span class="rgt">Nov 15, 2020</span>
+                        <span class="lft">DAAD</span><span>Dr. Aditya Mishra</span><span class="rgt">Berlin Institute of Technology</span>
                     </button>
                 </div>
                 <div class="content">
                     <p style="padding: 20px; margin-bottom: 0;">
-                        <span class="title small">Project Details</span><br>
+                        <span class="title small">Scholarship Details</span><br>
                         <br>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         
 
                         <!-- Button trigger modal -->
                         <div class="button">
-                            <a href="apply.html" style="color:white"><button type="button" class="btn btn-primary btn-lg myBtn">
-                              Apply</button></a>
+                            <button type="button" class="btn btn-primary btn-lg myBtn" data-toggle="modal" data-target="#myModal1">
+                              See Application
                             </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                
+                                <div class="modal-content">
+                                      
+                                    <div class="modal-body" style="text-align:center">
+
+                                                
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" style="font-size: 20px;">&times;</span></button><h2 style="font-weight:bold">SOP</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 15px;">abc</h2>
+                                                <hr>
+                                                <h2 style="font-weight:bold">History of Colabration</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 25px;">abc</h2>
+                                                <hr>
+                                                <h2 style="font-weight: bold; margin-top: 20px;">Justification of applying through the IITKGP Of USA AwardProgram</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 25px;">abc</h2>
+                                                <hr>
+                                                <h2 style="font-weight: bold; margin-top: 20px;">Engagement with the Host Institute</h2>
+                                                <h2 style="font-style: italic; margin-bottom: 25px;">abc</h2>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view CV</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view Awards</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view Transcripts</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view NOC</a>
+                                                <hr>
+                                                <a href="#" target="_blank">Click here to view Offer Letter</a>
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                    <!--Nothing Goes Here but is needed! -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </p>
                 </div>
@@ -279,7 +415,7 @@
                                 <!--social-->
                                 <div class="footer-social">
                                     <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                     <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
